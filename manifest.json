@@ -8,7 +8,7 @@
     "content_scripts": [{
       "css": [ "css/bootstrap.min.css", "css/style.css"],
       "js": ["js/hook.js"],
-      "matches": ["file://*.md"]
+      "matches": ["file://*"]
     }],
     "web_accessible_resources": [
         "js/marked.js",
