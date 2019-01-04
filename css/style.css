@@ -1,6 +1,11 @@
 /**
 HTML Overrides
 **/
+body{
+    padding-top: 2em;
+    padding-bottom: 3em;
+}
+
 pre{
     display: none;
 }
