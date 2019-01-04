@@ -29,6 +29,8 @@ function parseFinal() {
     $('a').each(function (i, link) {
         //Get the href attribute of this link
         let href = $(link).attr('href');
+        //Don't do anything if this is a folder ref
+        if(href.charAt(href.length - 1) == '/') return;
         //See if it contains an extension (<10 letters long)
         if (href.indexOf('.') > -1 && href.indexOf('.') > 1) {
             if (href.substring(href.indexOf('.').length < 10)){//If the ext is shorter than 10 chars
