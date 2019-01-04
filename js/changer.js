@@ -35,7 +35,7 @@ function checkFileType() {
         let folder = parts[parts.length - 1].toLowerCase().trim();
         //Finally, check if any of the links on this page have the same name
         $('a.icon.file').each(function (index, link) {
-            if ($(link).text().toLowerCase() == folder + '.md'){
+            if ($(link).text().toLowerCase() == folder + '.md' || $(link).text().toLowerCase() == 'index.md'){
                 let newDest = $(link).attr('href');
                 window.location.replace(newDest);
             }
