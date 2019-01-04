@@ -1,0 +1,17 @@
+{
+    "manifest_version": 2,
+   
+    "name": "DND MD",
+    "version": "0.1.0",
+    "description": "Visualizing Markdown of DND",
+   
+    "content_scripts": [{
+      "css": ["style.css"],
+      "js": ["hook.js"],
+      "matches": ["file://*.md"]
+    }],
+    "web_accessible_resources": [
+        "marked.min.js",
+        "changer.js"
+      ]
+  }
