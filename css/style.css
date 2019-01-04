@@ -1,3 +1,6 @@
 /**
 HTML Overrides
 **/
+pre{
+    display: none;
+}
