@@ -6,12 +6,13 @@
     "description": "Visualizing Markdown of DND",
    
     "content_scripts": [{
-      "css": ["style.css"],
-      "js": ["hook.js"],
+      "css": [ "css/bootstrap.min.css", "css/style.css"],
+      "js": ["js/hook.js"],
       "matches": ["file://*.md"]
     }],
     "web_accessible_resources": [
-        "marked.min.js",
-        "changer.js"
+        "js/marked.js",
+        "js/changer.js",
+        "js/jq.js"
       ]
   }
