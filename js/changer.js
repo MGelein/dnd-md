@@ -35,6 +35,8 @@ function parseFinal() {
                 console.log("skip: " + href);
                 return;//Ignore this link, it's probably fine
             }
+        }else if(href == undefined || href.length == 0){//If no link is made explicitly, link to name
+            href = $(link).text().trim().toLowerCase();
         }
         //If we reach here, we modify the link
         href += ".md";
